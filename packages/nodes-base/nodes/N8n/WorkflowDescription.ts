@@ -105,9 +105,9 @@ const createOperation: INodeProperties[] = [
 		displayName: 'Workflow Object',
 		name: 'workflowObject',
 		type: 'json',
-		default: '{ "name": "My workflow", "nodes": [], "connections": {}, "settings": {} }',
+		default: '{ "name": "나의 비즈니스 루틴", "nodes": [], "connections": {}, "settings": {} }',
 		placeholder:
-			'{\n  "name": "My workflow",\n  "nodes": [],\n  "connections": {},\n  "settings": {}\n}',
+			'{\n  "name": "나의 비즈니스 루틴",\n  "nodes": [],\n  "connections": {},\n  "settings": {}\n}',
 		required: true,
 		typeOptions: {
 			alwaysOpenEditWindow: true,
@@ -292,7 +292,7 @@ const updateOperation: INodeProperties[] = [
 		type: 'json',
 		default: '',
 		placeholder:
-			'{\n  "name": "My workflow",\n  "nodes": [],\n  "connections": {},\n  "settings": {}\n}',
+			'{\n  "name": "나의 비즈니스 루틴",\n  "nodes": [],\n  "connections": {},\n  "settings": {}\n}',
 		required: true,
 		typeOptions: {
 			alwaysOpenEditWindow: true,

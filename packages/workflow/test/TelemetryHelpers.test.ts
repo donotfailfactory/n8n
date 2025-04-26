@@ -92,7 +92,7 @@ describe('generateNodesGraph', () => {
 			createdAt: new Date('2024-01-05T13:49:14.244Z'),
 			updatedAt: new Date('2024-01-05T15:44:31.000Z'),
 			id: 'NfV4GV9aQTifSLc2',
-			name: 'My workflow 26',
+			name: '나의 비즈니스 루틴 26',
 			active: false,
 			nodes: [
 				{
@@ -155,7 +155,7 @@ describe('generateNodesGraph', () => {
 			createdAt: new Date('2024-01-05T13:49:14.244Z'),
 			updatedAt: new Date('2024-01-05T15:44:31.000Z'),
 			id: 'NfV4GV9aQTifSLc2',
-			name: 'My workflow 26',
+			name: '나의 비즈니스 루틴 26',
 			active: false,
 			nodes: [],
 			connections: {},
@@ -196,7 +196,7 @@ describe('generateNodesGraph', () => {
 			createdAt: new Date('2024-01-05T13:49:14.244Z'),
 			updatedAt: new Date('2024-01-05T15:44:31.000Z'),
 			id: 'NfV4GV9aQTifSLc2',
-			name: 'My workflow 26',
+			name: '나의 비즈니스 루틴 26',
 			active: false,
 			nodes: [
 				{
@@ -261,7 +261,7 @@ describe('generateNodesGraph', () => {
 			createdAt: new Date('2024-01-05T13:49:14.244Z'),
 			updatedAt: new Date('2024-01-05T15:44:31.000Z'),
 			id: 'NfV4GV9aQTifSLc2',
-			name: 'My workflow 26',
+			name: '나의 비즈니스 루틴 26',
 			active: false,
 			nodes: [
 				{
@@ -337,7 +337,7 @@ describe('generateNodesGraph', () => {
 			createdAt: new Date('2024-01-05T13:49:14.244Z'),
 			updatedAt: new Date('2024-01-05T15:44:31.000Z'),
 			id: 'NfV4GV9aQTifSLc2',
-			name: 'My workflow 26',
+			name: '나의 비즈니스 루틴 26',
 			active: false,
 			nodes: [
 				{

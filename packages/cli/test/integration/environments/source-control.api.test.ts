@@ -48,7 +48,7 @@ describe('GET /sourceControl/preferences', () => {
 			return [
 				{
 					id: 'haQetoXq9GxHSkft',
-					name: 'My workflow 6 edit',
+					name: '나의 비즈니스 루틴 6 edit',
 					type: 'workflow',
 					status: 'modified',
 					location: 'local',

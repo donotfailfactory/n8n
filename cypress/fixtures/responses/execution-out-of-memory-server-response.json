@@ -14,7 +14,7 @@
 			"data": "[{\"resultData\":\"1\"},{\"runData\":\"2\",\"error\":\"3\"},{\"When clicking \\\"Execute Workflow\\\"\":\"4\",\"Code\":\"5\"},{\"message\":\"6\",\"timestamp\":1716803796412,\"name\":\"7\",\"context\":\"8\"},[\"9\"],[\"10\"],\"Workflow did not finish, possible out-of-memory issue\",\"WorkflowOperationError\",{},{\"startTime\":0,\"executionTime\":0,\"source\":\"11\",\"executionStatus\":\"12\"},{\"startTime\":1716803663,\"executionTime\":19,\"source\":\"13\",\"executionStatus\":\"14\",\"data\":\"15\"},[null],\"unknown\",[null],\"success\",{\"main\":\"16\"},[\"17\"],[\"18\"],{\"json\":\"19\"},{\"isArtificialRecoveredEventItem\":true}]",
 			"workflowData": {
 					"id": "fGNYufZFmt9XRsNy",
-					"name": "My workflow 24",
+					"name": "나의 비즈니스 루틴 24",
 					"nodes": [
 							{
 									"parameters": {

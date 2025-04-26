@@ -30,7 +30,7 @@ import SUB_WORKFLOW_INPUTS from '../fixtures/Test_Subworkflow-Inputs.json';
 import { errorToast, successToast } from '../pages/notifications';
 import { getVisiblePopper } from '../utils';
 
-const DEFAULT_WORKFLOW_NAME = 'My workflow';
+const DEFAULT_WORKFLOW_NAME = '나의 비즈니스 루틴';
 const DEFAULT_SUBWORKFLOW_NAME_1 = 'My Sub-Workflow 1';
 const DEFAULT_SUBWORKFLOW_NAME_2 = 'My Sub-Workflow 2';
 

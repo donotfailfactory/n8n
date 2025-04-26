@@ -243,7 +243,7 @@ export function createFolderFromListHeaderButton(folderName: string) {
 }
 
 export function createWorkflowFromEmptyState(workflowName?: string) {
-	getFolderEmptyState().find('button').contains('Create Workflow').click();
+	getFolderEmptyState().find('button').contains('루틴 생성').click();
 	if (workflowName) {
 		cy.getByTestId('workflow-name-input').type(`{selectAll}{backspace}${workflowName}`, {
 			delay: 50,

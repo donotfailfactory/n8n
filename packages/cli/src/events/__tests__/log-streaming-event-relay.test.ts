@@ -956,7 +956,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec789',
 				nodeName: 'Memory',
 				workflowId: 'wf123',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.memory',
 			};
 
@@ -974,7 +974,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec456',
 				nodeName: 'Memory',
 				workflowId: 'wf789',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.memory',
 			};
 
@@ -992,7 +992,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec123',
 				nodeName: 'Output Parser',
 				workflowId: 'wf456',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.outputParser',
 			};
 
@@ -1010,7 +1010,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec789',
 				nodeName: 'Retriever',
 				workflowId: 'wf123',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.retriever',
 			};
 
@@ -1028,7 +1028,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec456',
 				nodeName: 'Embeddings',
 				workflowId: 'wf789',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.embeddings',
 			};
 
@@ -1046,7 +1046,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec123',
 				nodeName: 'Embeddings',
 				workflowId: 'wf456',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.embeddings',
 			};
 
@@ -1064,7 +1064,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec789',
 				nodeName: 'Embeddings',
 				workflowId: 'wf789',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.embeddings',
 			};
 
@@ -1082,7 +1082,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec456',
 				nodeName: 'Text Splitter',
 				workflowId: 'wf789',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.textSplitter',
 			};
 
@@ -1100,7 +1100,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec123',
 				nodeName: 'Tool',
 				workflowId: 'wf456',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.tool',
 			};
 
@@ -1118,7 +1118,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec789',
 				nodeName: 'Vector Store',
 				workflowId: 'wf123',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.vectorStore',
 			};
 
@@ -1136,7 +1136,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec456',
 				nodeName: 'OpenAI',
 				workflowId: 'wf789',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.openai',
 			};
 
@@ -1154,7 +1154,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec789',
 				nodeName: 'OpenAI',
 				workflowId: 'wf123',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.openai',
 			};
 
@@ -1172,7 +1172,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec456',
 				nodeName: 'Vector Store',
 				workflowId: 'wf789',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.vectorStore',
 			};
 
@@ -1190,7 +1190,7 @@ describe('LogStreamingEventRelay', () => {
 				executionId: 'exec789',
 				nodeName: 'Vector Store',
 				workflowId: 'wf123',
-				workflowName: 'My Workflow',
+				workflowName: '나의 비즈니스 루틴',
 				nodeType: 'n8n-nodes-base.vectorStore',
 			};
 

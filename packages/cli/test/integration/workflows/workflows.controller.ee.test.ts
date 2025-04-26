@@ -304,7 +304,7 @@ describe('PUT /workflows/:workflowId/share', () => {
 	test('should ignore sharing with owner project', async () => {
 		// ARRANGE
 		const project = ownerPersonalProject;
-		const workflow = await createWorkflow({ name: 'My workflow' }, project);
+		const workflow = await createWorkflow({ name: '나의 비즈니스 루틴' }, project);
 
 		await authOwnerAgent
 			.put(`/workflows/${workflow.id}/share`)
@@ -324,7 +324,7 @@ describe('PUT /workflows/:workflowId/share', () => {
 	test('should ignore sharing with project that already has it shared', async () => {
 		// ARRANGE
 		const project = ownerPersonalProject;
-		const workflow = await createWorkflow({ name: 'My workflow' }, project);
+		const workflow = await createWorkflow({ name: '나의 비즈니스 루틴' }, project);
 
 		const project2 = memberPersonalProject;
 		await shareWorkflowWithProjects(workflow, [{ project: project2 }]);
@@ -355,12 +355,12 @@ describe('GET /workflows/new', () => {
 		}`, async () => {
 			license.enable('feat:sharing');
 
-			await createWorkflow({ name: 'My workflow' }, owner);
-			await createWorkflow({ name: 'My workflow 7' }, owner);
+			await createWorkflow({ name: '나의 비즈니스 루틴' }, owner);
+			await createWorkflow({ name: '나의 비즈니스 루틴 7' }, owner);
 
 			const response = await authOwnerAgent.get('/workflows/new');
 			expect(response.statusCode).toBe(200);
-			expect(response.body.data.name).toEqual('My workflow 8');
+			expect(response.body.data.name).toEqual('나의 비즈니스 루틴 8');
 		});
 	});
 });
@@ -626,7 +626,7 @@ describe('GET /workflows/:workflowId', () => {
 });
 
 describe('POST /workflows', () => {
-	test('project viewers cannot create workflows', async () => {
+	test('project viewers cannot 루틴 생성s', async () => {
 		const teamProject = await createTeamProject();
 		await linkUserToProject(member, teamProject, 'project:viewer');
 
@@ -702,7 +702,7 @@ describe('POST /workflows', () => {
 		expect(response.statusCode).toBe(200);
 	});
 
-	test('Should create workflow history version when licensed', async () => {
+	test('Should 루틴 생성 history version when licensed', async () => {
 		license.enable('feat:workflowHistory');
 		const payload = {
 			name: 'testing',
@@ -751,7 +751,7 @@ describe('POST /workflows', () => {
 		expect(historyVersion!.nodes).toEqual(payload.nodes);
 	});
 
-	test('Should not create workflow history version when not licensed', async () => {
+	test('Should not 루틴 생성 history version when not licensed', async () => {
 		license.disable('feat:workflowHistory');
 		const payload = {
 			name: 'testing',
@@ -1272,7 +1272,7 @@ describe('PATCH /workflows/:workflowId', () => {
 	});
 
 	describe('workflow history', () => {
-		test('Should create workflow history version when licensed', async () => {
+		test('Should 루틴 생성 history version when licensed', async () => {
 			license.enable('feat:workflowHistory');
 			const workflow = await createWorkflow({}, owner);
 			const payload = {
@@ -1330,7 +1330,7 @@ describe('PATCH /workflows/:workflowId', () => {
 			expect(historyVersion!.nodes).toEqual(payload.nodes);
 		});
 
-		test('Should not create workflow history version when not licensed', async () => {
+		test('Should not 루틴 생성 history version when not licensed', async () => {
 			license.disable('feat:workflowHistory');
 			const workflow = await createWorkflow({}, owner);
 			const payload = {

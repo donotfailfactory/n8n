@@ -190,7 +190,7 @@ export const prepareWorkflowCreateBody: PreSendAction = async function (
 	const body = requestOptions.body as IDataObject;
 	const newBody: IDataObject = {};
 
-	newBody.name = body.name || 'My workflow';
+	newBody.name = body.name || '나의 비즈니스 루틴';
 	newBody.nodes = body.nodes || [];
 	newBody.settings = body.settings || {};
 	newBody.connections = body.connections || {};

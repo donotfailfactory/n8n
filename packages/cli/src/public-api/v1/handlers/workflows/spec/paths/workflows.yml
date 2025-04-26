@@ -51,7 +51,7 @@ get:
       allowReserved: true
       schema:
         type: string
-        example: My Workflow
+        example: 나의 비즈니스 루틴
     - name: projectId
       in: query
       required: false

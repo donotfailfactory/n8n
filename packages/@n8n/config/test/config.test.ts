@@ -140,7 +140,7 @@ describe('GlobalConfig', () => {
 			infoUrl: 'https://docs.n8n.io/hosting/installation/updating/',
 		},
 		workflows: {
-			defaultName: 'My workflow',
+			defaultName: '나의 비즈니스 루틴',
 			callerPolicyDefaultOption: 'workflowsFromSameOwner',
 			activationBatchSize: 1,
 		},

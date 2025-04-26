@@ -194,7 +194,7 @@ export function makeWorkflow(options?: {
 		};
 	}
 
-	workflow.name = 'My Workflow';
+	workflow.name = '나의 비즈니스 루틴';
 	workflow.active = false;
 	workflow.connections = {};
 	workflow.nodes = [node];

@@ -63,7 +63,7 @@ const pushResult: SourceControlledFile[] = [
 	{
 		file: 'workflows/BpFS26gViuGqrIVP.json',
 		id: 'BpFS26gViuGqrIVP',
-		name: 'My workflow 5',
+		name: '나의 비즈니스 루틴 5',
 		type: 'workflow',
 		status: 'modified',
 		location: 'remote',
@@ -74,7 +74,7 @@ const pushResult: SourceControlledFile[] = [
 	{
 		file: 'workflows/BpFS26gViuGqrIVP.json',
 		id: 'BpFS26gViuGqrIVP',
-		name: 'My workflow 5',
+		name: '나의 비즈니스 루틴 5',
 		type: 'workflow',
 		status: 'modified',
 		location: 'local',
@@ -84,7 +84,7 @@ const pushResult: SourceControlledFile[] = [
 	{
 		file: 'workflows/dAU6dNthm4TR3gXx.json',
 		id: 'dAU6dNthm4TR3gXx',
-		name: 'My workflow 7',
+		name: '나의 비즈니스 루틴 7',
 		type: 'workflow',
 		status: 'created',
 		location: 'local',
@@ -95,7 +95,7 @@ const pushResult: SourceControlledFile[] = [
 	{
 		file: 'workflows/haQetoXq9GxHSkft.json',
 		id: 'haQetoXq9GxHSkft',
-		name: 'My workflow 6',
+		name: '나의 비즈니스 루틴 6',
 		type: 'workflow',
 		status: 'created',
 		location: 'local',
@@ -148,7 +148,7 @@ const pullResult: SourceControlledFile[] = [
 	{
 		file: 'workflows/dAU6dNthm4TR3gXx.json',
 		id: 'dAU6dNthm4TR3gXx',
-		name: 'My workflow 7',
+		name: '나의 비즈니스 루틴 7',
 		type: 'workflow',
 		status: 'created',
 		location: 'local',
@@ -158,7 +158,7 @@ const pullResult: SourceControlledFile[] = [
 	{
 		file: 'workflows/haQetoXq9GxHSkft.json',
 		id: 'haQetoXq9GxHSkft',
-		name: 'My workflow 6',
+		name: '나의 비즈니스 루틴 6',
 		type: 'workflow',
 		status: 'modified',
 		location: 'local',

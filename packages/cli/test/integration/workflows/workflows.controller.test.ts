@@ -145,7 +145,7 @@ describe('POST /workflows', () => {
 		);
 	});
 
-	test('should create workflow history version when licensed', async () => {
+	test('should 루틴 생성 history version when licensed', async () => {
 		license.enable('feat:workflowHistory');
 		const payload = {
 			name: 'testing',
@@ -194,7 +194,7 @@ describe('POST /workflows', () => {
 		expect(historyVersion!.nodes).toEqual(payload.nodes);
 	});
 
-	test('should not create workflow history version when not licensed', async () => {
+	test('should not 루틴 생성 history version when not licensed', async () => {
 		license.disable('feat:workflowHistory');
 		const payload = {
 			name: 'testing',
@@ -235,7 +235,7 @@ describe('POST /workflows', () => {
 		).toBe(0);
 	});
 
-	test('create workflow in personal project by default', async () => {
+	test('루틴 생성 in personal project by default', async () => {
 		//
 		// ARRANGE
 		//
@@ -419,7 +419,7 @@ describe('POST /workflows', () => {
 		expect(response.body.data.shared).toBeUndefined();
 	});
 
-	test('create workflow without parent folder if no folder is provided', async () => {
+	test('루틴 생성 without parent folder if no folder is provided', async () => {
 		//
 		// ARRANGE
 		//
@@ -454,7 +454,7 @@ describe('POST /workflows', () => {
 		expect(response.body.data.shared).toBeUndefined();
 	});
 
-	test('create workflow without parent is provided folder does not exist in the project', async () => {
+	test('루틴 생성 without parent is provided folder does not exist in the project', async () => {
 		//
 		// ARRANGE
 		//
@@ -1153,7 +1153,7 @@ describe('GET /workflows', () => {
 		test('should sort by name column', async () => {
 			await createWorkflow({ name: 'a' }, owner);
 			await createWorkflow({ name: 'b' }, owner);
-			await createWorkflow({ name: 'My workflow' }, owner);
+			await createWorkflow({ name: '나의 비즈니스 루틴' }, owner);
 
 			let response;
 
@@ -1164,7 +1164,7 @@ describe('GET /workflows', () => {
 				data: [
 					expect.objectContaining({ name: 'a' }),
 					expect.objectContaining({ name: 'b' }),
-					expect.objectContaining({ name: 'My workflow' }),
+					expect.objectContaining({ name: '나의 비즈니스 루틴' }),
 				],
 			});
 
@@ -1173,7 +1173,7 @@ describe('GET /workflows', () => {
 			expect(response.body).toEqual({
 				count: 3,
 				data: [
-					expect.objectContaining({ name: 'My workflow' }),
+					expect.objectContaining({ name: '나의 비즈니스 루틴' }),
 					expect.objectContaining({ name: 'b' }),
 					expect.objectContaining({ name: 'a' }),
 				],
@@ -1798,7 +1798,7 @@ describe('GET /workflows?includeFolders=true', () => {
 		test('should sort by name column', async () => {
 			await createWorkflow({ name: 'a' }, owner);
 			await createWorkflow({ name: 'b' }, owner);
-			await createWorkflow({ name: 'My workflow' }, owner);
+			await createWorkflow({ name: '나의 비즈니스 루틴' }, owner);
 			const pp = await getPersonalProject(owner);
 			await createFolder(pp, {
 				name: 'a Folder',
@@ -1822,7 +1822,7 @@ describe('GET /workflows?includeFolders=true', () => {
 					expect.objectContaining({ name: 'Z Folder' }),
 					expect.objectContaining({ name: 'a' }),
 					expect.objectContaining({ name: 'b' }),
-					expect.objectContaining({ name: 'My workflow' }),
+					expect.objectContaining({ name: '나의 비즈니스 루틴' }),
 				],
 			});
 
@@ -1836,7 +1836,7 @@ describe('GET /workflows?includeFolders=true', () => {
 				data: [
 					expect.objectContaining({ name: 'Z Folder' }),
 					expect.objectContaining({ name: 'a Folder' }),
-					expect.objectContaining({ name: 'My workflow' }),
+					expect.objectContaining({ name: '나의 비즈니스 루틴' }),
 					expect.objectContaining({ name: 'b' }),
 					expect.objectContaining({ name: 'a' }),
 				],
@@ -1981,7 +1981,7 @@ describe('GET /workflows?includeFolders=true', () => {
 });
 
 describe('PATCH /workflows/:workflowId', () => {
-	test('should create workflow history version when licensed', async () => {
+	test('should 루틴 생성 history version when licensed', async () => {
 		license.enable('feat:workflowHistory');
 		const workflow = await createWorkflow({}, owner);
 		const payload = {
@@ -2039,7 +2039,7 @@ describe('PATCH /workflows/:workflowId', () => {
 		expect(historyVersion!.nodes).toEqual(payload.nodes);
 	});
 
-	test('should not create workflow history version when not licensed', async () => {
+	test('should not 루틴 생성 history version when not licensed', async () => {
 		license.disable('feat:workflowHistory');
 		const workflow = await createWorkflow({}, owner);
 		const payload = {

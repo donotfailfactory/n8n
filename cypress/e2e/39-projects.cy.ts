@@ -249,7 +249,7 @@ describe('Projects', { disableAutoLogin: true }, () => {
 			projects.getHomeButton().click();
 			workflowsPage.getters.workflowCards().should('have.length', 1);
 			workflowsPage.getters.workflowCards().filter(':contains("Personal")').should('exist');
-			workflowsPage.getters.workflowCardActions('My workflow').click();
+			workflowsPage.getters.workflowCardActions('나의 비즈니스 루틴').click();
 			workflowsPage.getters.workflowMoveButton().click();
 
 			projects

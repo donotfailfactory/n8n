@@ -26,7 +26,7 @@ const renderComponent = createComponentRenderer(WorkflowCard);
 
 const createWorkflow = (overrides = {}): IWorkflowDb => ({
 	id: '1',
-	name: 'My Workflow',
+	name: '나의 비즈니스 루틴',
 	createdAt: new Date().toISOString(),
 	updatedAt: new Date().toISOString(),
 	nodes: [],

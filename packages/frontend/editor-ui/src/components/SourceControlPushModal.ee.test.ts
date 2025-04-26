@@ -97,7 +97,7 @@ describe('SourceControlPushModal', () => {
 		const status: SourceControlledFile[] = [
 			{
 				id: 'gTbbBkkYTnNyX1jD',
-				name: 'My workflow 1',
+				name: '나의 비즈니스 루틴 1',
 				type: 'workflow',
 				status: 'created',
 				location: 'local',
@@ -107,7 +107,7 @@ describe('SourceControlPushModal', () => {
 			},
 			{
 				id: 'JIGKevgZagmJAnM6',
-				name: 'My workflow 2',
+				name: '나의 비즈니스 루틴 2',
 				type: 'workflow',
 				status: 'created',
 				location: 'local',
@@ -145,15 +145,15 @@ describe('SourceControlPushModal', () => {
 		expect(within(files[0]).getByRole('checkbox')).not.toBeChecked();
 		expect(within(files[1]).getByRole('checkbox')).not.toBeChecked();
 
-		await userEvent.click(within(files[0]).getByText('My workflow 2'));
+		await userEvent.click(within(files[0]).getByText('나의 비즈니스 루틴 2'));
 		expect(within(files[0]).getByRole('checkbox')).toBeChecked();
 		expect(within(files[1]).getByRole('checkbox')).not.toBeChecked();
 
-		await userEvent.click(within(files[1]).getByText('My workflow 1'));
+		await userEvent.click(within(files[1]).getByText('나의 비즈니스 루틴 1'));
 		expect(within(files[0]).getByRole('checkbox')).toBeChecked();
 		expect(within(files[1]).getByRole('checkbox')).toBeChecked();
 
-		await userEvent.click(within(files[1]).getByText('My workflow 1'));
+		await userEvent.click(within(files[1]).getByText('나의 비즈니스 루틴 1'));
 		expect(within(files[0]).getByRole('checkbox')).toBeChecked();
 		expect(within(files[1]).getByRole('checkbox')).not.toBeChecked();
 
@@ -161,16 +161,16 @@ describe('SourceControlPushModal', () => {
 		expect(within(files[0]).getByRole('checkbox')).toBeChecked();
 		expect(within(files[1]).getByRole('checkbox')).toBeChecked();
 
-		await userEvent.click(within(files[0]).getByText('My workflow 2'));
-		await userEvent.click(within(files[1]).getByText('My workflow 1'));
+		await userEvent.click(within(files[0]).getByText('나의 비즈니스 루틴 2'));
+		await userEvent.click(within(files[1]).getByText('나의 비즈니스 루틴 1'));
 		expect(within(files[0]).getByRole('checkbox')).not.toBeChecked();
 		expect(within(files[1]).getByRole('checkbox')).not.toBeChecked();
 		expect(
 			within(getByTestId('source-control-push-modal-toggle-all')).getByRole('checkbox'),
 		).not.toBeChecked();
 
-		await userEvent.click(within(files[0]).getByText('My workflow 2'));
-		await userEvent.click(within(files[1]).getByText('My workflow 1'));
+		await userEvent.click(within(files[0]).getByText('나의 비즈니스 루틴 2'));
+		await userEvent.click(within(files[1]).getByText('나의 비즈니스 루틴 1'));
 		expect(within(files[0]).getByRole('checkbox')).toBeChecked();
 		expect(within(files[1]).getByRole('checkbox')).toBeChecked();
 		expect(
@@ -263,7 +263,7 @@ describe('SourceControlPushModal', () => {
 		const status: SourceControlledFile[] = [
 			{
 				id: 'gTbbBkkYTnNyX1jD',
-				name: 'My workflow 1',
+				name: '나의 비즈니스 루틴 1',
 				type: 'workflow',
 				status: 'created',
 				location: 'local',
@@ -273,7 +273,7 @@ describe('SourceControlPushModal', () => {
 			},
 			{
 				id: 'JIGKevgZagmJAnM6',
-				name: 'My workflow 2',
+				name: '나의 비즈니스 루틴 2',
 				type: 'workflow',
 				status: 'created',
 				location: 'local',
@@ -313,7 +313,7 @@ describe('SourceControlPushModal', () => {
 			const status: SourceControlledFile[] = [
 				{
 					id: 'gTbbBkkYTnNyX1jD',
-					name: 'My workflow 1',
+					name: '나의 비즈니스 루틴 1',
 					type: 'workflow',
 					status: 'created',
 					location: 'local',
@@ -323,7 +323,7 @@ describe('SourceControlPushModal', () => {
 				},
 				{
 					id: 'JIGKevgZagmJAnM6',
-					name: 'My workflow 2',
+					name: '나의 비즈니스 루틴 2',
 					type: 'workflow',
 					status: 'created',
 					location: 'local',

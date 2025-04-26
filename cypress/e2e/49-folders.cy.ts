@@ -247,7 +247,7 @@ describe('Folders', () => {
 			getFolderCard('My Folder').click();
 			getFolderEmptyState().should('exist');
 			// Create a new workflow from the empty state
-			createWorkflowFromEmptyState('My Workflow');
+			createWorkflowFromEmptyState('나의 비즈니스 루틴');
 			// Toast should inform that the workflow was created in the folder
 			successToast().should(
 				'contain.text',
@@ -269,8 +269,8 @@ describe('Folders', () => {
 		});
 	});
 
-	describe('Create workflows inside folders', () => {
-		it('should create workflows in folders in all supported ways', () => {
+	describe('루틴 생성s inside folders', () => {
+		it('should 루틴 생성s in folders in all supported ways', () => {
 			goToPersonalProject();
 			createFolderFromProjectHeader('Workflows go here');
 			// 1. From empty state

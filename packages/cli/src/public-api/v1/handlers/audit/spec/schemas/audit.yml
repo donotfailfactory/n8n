@@ -29,7 +29,7 @@ properties:
                 {
                   kind: node,
                   workflowId: '1',
-                  workflowName: 'My Workflow',
+                  workflowName: '나의 비즈니스 루틴',
                   nodeId: 51eb5852-ce0b-4806-b4ff-e41322a4041a,
                   nodeName: 'MySQL',
                   nodeType: n8n-nodes-base.mySql,
@@ -53,7 +53,7 @@ properties:
                 {
                   kind: node,
                   workflowId: '1',
-                  workflowName: 'My Workflow',
+                  workflowName: '나의 비즈니스 루틴',
                   nodeId: 51eb5852-ce0b-4806-b4ff-e41322a4041a,
                   nodeName: 'Ready Binary file',
                   nodeType: n8n-nodes-base.readBinaryFile,

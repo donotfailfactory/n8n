@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import {
 	parse as esprimaParse,
 	Syntax,
@@ -79,15 +80,15 @@ function syntaxNodeToValue(expression?: SyntaxNode | null): unknown {
 		case Syntax.ObjectExpression:
 			return Object.fromEntries(
 				expression.properties
-					.filter((prop) => prop.type === Syntax.Property)
-					.map(({ key, value }) => [syntaxNodeToValue(key), syntaxNodeToValue(value)]),
+					.filter((prop: any) => prop.type === Syntax.Property)
+					.map(({ key, value }: any) => [syntaxNodeToValue(key), syntaxNodeToValue(value)]),
 			);
 		case Syntax.Identifier:
 			return expression.name;
 		case Syntax.Literal:
 			return expression.value;
 		case Syntax.ArrayExpression:
-			return expression.elements.map((exp) => syntaxNodeToValue(exp));
+			return expression.elements.map((exp: any) => syntaxNodeToValue(exp));
 		default:
 			return undefined;
 	}
@@ -100,7 +101,7 @@ function syntaxNodeToValue(expression?: SyntaxNode | null): unknown {
  */
 function parseJSObject(objectAsString: string): object {
 	const jsExpression = esprimaParse(`(${objectAsString})`).body.find(
-		(node): node is ExpressionStatement =>
+		(node: any): node is ExpressionStatement =>
 			node.type === Syntax.ExpressionStatement && node.expression.type === Syntax.ObjectExpression,
 	);
 

@@ -1,6 +1,6 @@
 {
 	"_reusableBaseText": {
-		"cancel": "Cancel",
+		"cancel": "취소",
 		"codeNodeEditor": {
 			"linter": {
 				"useJson": "Access the properties of an item under `.json`, e.g. `item.json`"
@@ -2475,8 +2475,8 @@
 	"workflows.noResults": "No workflows found",
 	"workflows.noResults.withSearch.switchToShared.preamble": "some workflows may be",
 	"workflows.noResults.withSearch.switchToShared.link": "hidden",
-	"workflows.empty.heading": "👋 Welcome {name}!",
-	"workflows.empty.heading.userNotSetup": "👋 Welcome!",
+	"workflows.empty.heading": "👋 바이 {name}!",
+	"workflows.empty.heading.userNotSetup": "👋 안녕!",
 	"workflows.empty.description": "Create your first workflow",
 	"workflows.empty.description.readOnlyEnv": "No workflows here yet",
 	"workflows.empty.description.noPermission": "There are currently no workflows to view",

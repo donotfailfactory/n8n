@@ -21,6 +21,8 @@ module.exports = (tsconfigRootDir, mode) => {
 			'@typescript-eslint/parser': ['.ts'],
 		},
 
+		'@typescript-eslint/no-unsafe-call': 'false',
+
 		'import/resolver': {
 			typescript: {
 				tsconfigRootDir,

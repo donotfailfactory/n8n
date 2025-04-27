@@ -25,7 +25,7 @@
 	--color-background-base: var(--prim-gray-670);
 	--color-background-light-base: var(--prim-gray-780);
 	--color-background-light: var(--prim-gray-820);
-	--color-background-xlight: var(--prim-gray-740);
+	--color-background-xlight: #fff;
 
 	--box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.1);
 	--box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.2);
@@ -491,12 +491,12 @@
 	--color-menu-active-background: var(--prim-gray-670);
 }
 
-body[data-theme='dark'] {
-	@include theme;
-}
+// body[data-theme='dark'] {
+// 	@include theme;
+// }
 
-@media (prefers-color-scheme: dark) {
-	body:not([data-theme]) {
-		@include theme;
-	}
-}
+// @media (prefers-color-scheme: dark) {
+// 	body:not([data-theme]) {
+// 		@include theme;
+// 	}
+// }

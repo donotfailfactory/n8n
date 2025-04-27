@@ -18,7 +18,7 @@
 		font-family: var(--font-family-monospace);
 		max-height: min(220px, 20vh);
 		max-width: 240px;
-		min-width: 200px;
+		min-width: 312px;
 
 		border: var(--border-base);
 		border-top-left-radius: var(--border-radius-base);
@@ -331,7 +331,7 @@
 
 	&.cm-completionInfo-right {
 		background-color: var(--color-infobox-background);
-		min-width: 200px;
+		min-width: 312px;
 	}
 }
 

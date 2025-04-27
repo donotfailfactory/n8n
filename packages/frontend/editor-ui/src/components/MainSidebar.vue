@@ -506,7 +506,7 @@ onClickOutside(createBtn as Ref<VueInstance>, () => {
 	border-right: var(--border-width-base) var(--border-style-base) var(--color-foreground-base);
 	transition: width 150ms ease-in-out;
 	min-width: $sidebar-expanded-width;
-	max-width: 244px;
+	max-width: 312px;
 	background-color: var(--menu-background, var(--color-background-xlight));
 
 	.logo {
